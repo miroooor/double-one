@@ -1,0 +1,3555 @@
+@charset "utf-8";
+/*----------------------------------------
+  Yoursite Style
+----------------------------------------*/
+
+#adv-done body {
+    margin: 0;
+    font-family: arial;
+
+    font-family: 微軟正黑體, Microsoft JhengHei, Arial, '新細明體', sans-serif;
+}
+
+#adv-done li {
+    text-decoration: none;
+    list-style: none;
+}
+
+#adv-done html,
+#adv-done body,
+#adv-done div,
+#adv-done span,
+#adv-done applet,
+#adv-done object,
+#adv-done iframe,
+#adv-done h1,
+#adv-done h2,
+#adv-done h3,
+#adv-done h4,
+#adv-done h5,
+#adv-done h6,
+#adv-done p,
+#adv-done blockquote,
+#adv-done pre,
+#adv-done a,
+#adv-done abbr,
+#adv-done acronym,
+#adv-done address,
+#adv-done big,
+#adv-done cite,
+#adv-done code,
+#adv-done del,
+#adv-done dfn,
+#adv-done em,
+#adv-done img,
+#adv-done ins,
+#adv-done kbd,
+#adv-done q,
+#adv-done s,
+#adv-done samp,
+#adv-done small,
+#adv-done strike,
+#adv-done strong,
+#adv-done sub,
+#adv-done sup,
+#adv-done tt,
+#adv-done var,
+#adv-done b,
+#adv-done u,
+#adv-done i,
+#adv-done center,
+#adv-done dl,
+#adv-done dt,
+#adv-done dd,
+#adv-done ol,
+#adv-done ul,
+#adv-done li,
+#adv-done fieldset,
+#adv-done form,
+#adv-done label,
+#adv-done legend,
+#adv-done table,
+#adv-done caption,
+#adv-done tbody,
+#adv-done tfoot,
+#adv-done thead,
+#adv-done tr,
+#adv-done th,
+#adv-done td,
+#adv-done article,
+#adv-done aside,
+#adv-done canvas,
+#adv-done details,
+#adv-done embed,
+#adv-done figure,
+#adv-done figcaption,
+#adv-done footer,
+#adv-done header,
+#adv-done hgroup,
+#adv-done menu,
+#adv-done nav,
+#adv-done output,
+#adv-done ruby,
+#adv-done section,
+#adv-done summary,
+#adv-done time,
+#adv-done mark,
+#adv-done audio,
+#adv-done video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+#adv-done p {
+    margin: 0;
+}
+
+#adv-done a {
+    text-decoration: none;
+}
+
+#adv-done .mi-bg-w {
+    background-color: #fefefe;
+}
+
+#adv-done .mi-mb-3 {
+    margin-bottom: 3%;
+}
+
+#adv-done .mi-mp-3 {
+    margin-top: 3%;
+}
+
+#adv-done .mi-pb-3 {
+    padding-bottom: 3%;
+}
+
+#adv-done .mi-pb-5 {
+    padding-bottom: 5%;
+}
+
+/*----------------------------------------
+  main CSS start
+----------------------------------------*/
+
+/*----------------------------------------
+  mi-KV
+----------------------------------------*/
+#adv-done.mi-all {
+    background-color: #fefefe;
+    margin: 0 auto;
+}
+
+#adv-done .mi-kv {
+    background-image: url(css-img/ny-kv-bg.png);
+
+    background-image: url(css-img/main-kv-bg-02.jpg);
+
+    background-position: center;
+
+    /*background-position: top;*/
+    background-color: #5215b8;
+
+    /*background: -webkit-linear-gradient(right,#0b6b9a,#0087b6);
+background: -o-linear-gradient(right,#0b6b9a,#0087b6);
+background: -moz-linear-gradient(right,#0b6b9a,#0087b6);
+background: linear-gradient(to right,#0b6b9a,#0087b6);*/
+
+    background-repeat: no-repeat;
+}
+
+#adv-done .mi-kv-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2% 12% 0% 12%;
+    padding: 2% 12% 5% 12%;
+    padding: 6% 12% 10% 12%;
+    padding: 6% 12% 10% 4%;
+
+    padding: 4% 4% 7% 4%;
+}
+
+#adv-done .mi-kv-box-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0% 15% 0% 15%;
+
+    padding-bottom: 5%;
+    margin-top: 1%;
+}
+
+#adv-done .mi-kv-box-r-img {
+    text-align: center;
+
+    width: 80%;
+    margin: auto;
+}
+
+#adv-done .mi-kv-box-btn-box {
+    display: inline-block;
+    width: 30%;
+}
+
+#adv-done .mi-kv-box-l {
+    width: 52%;
+    /*margin-bottom: 4%;*/
+}
+
+#adv-done .mi-kv-box-r {
+    width: 45%;
+    /*margin-top: 8%;*/
+}
+
+#adv-done .mi-kv-box-l .mi-kv-btn {
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 2%;
+    padding: 3px 20px;
+}
+
+#adv-done .mi-dp-b {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .mi-kv-box-btn-box {
+        width: 55%;
+    }
+
+    #adv-done .mi-kv-box-r-img {
+        width: 100%;
+    }
+
+    #adv-done .mi-kv {
+        background-image: url(css-img/main-kv-bg-mb-02.jpg);
+
+        background-position: center;
+
+        /*background-position: top;*/
+    }
+
+    #adv-done .mi-kv-box {
+        display: block;
+        padding: 10% 6% 15% 6%;
+        background-position: center;
+        padding-top: 30%;
+    }
+
+    #adv-done .mi-kv-box-l {
+        width: 100%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    #adv-done .mi-kv-box-r {
+        width: 100%;
+    }
+}
+
+/*----------------------------------------
+  mi-select
+----------------------------------------*/
+#adv-done .mi-sel {
+    /*background-image: url(css-img/ny-kv-bg.png);*/
+    background-color: #34b1c4;
+    background-color: #3a2cb5;
+    background-color: #4417a0;
+}
+
+#adv-done .mi-sel-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /*padding-bottom: 1%;
+    padding-top: 1%;*/
+
+    max-width: 1140px;
+    margin: auto;
+}
+
+#adv-done .m-sel-btn {
+    flex: 0 0 33%;
+    flex: 0 0 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    /*font-size: 1rem;*/
+    color: white;
+    /*background-color: #1b4c9e;*/
+    padding: 1%;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    /*border: 1px solid #0a4b67;*/
+
+    /*
+background: rgb(0,79,191); /* Old browsers 
+background: -moz-linear-gradient(top,  rgba(0,79,191,1) 0%, rgba(0,55,148,1) 
+background: -webkit-linear-gradient(top,  rgba(0,79,191,1) 0%,rgba(0,55,148,1) 100%); 
+background: linear-gradient(to bottom,  rgba(0,79,191,1) 0%,rgba(0,55,148,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004fbf', endColorstr='#003794',GradientType=0 ); 
+*/
+    line-height: 2rem;
+
+    /*border-radius: 10px;*/
+}
+
+#adv-done .m-sel-btn-line {
+    border-right: 1px solid #9a007e;
+    border-left: 1px solid #9a007e;
+}
+
+#adv-done .m-sel-btn:hover {
+    background-color: #229bad;
+    background-color: #a00ae5;
+    border: none;
+
+    /*
+background: rgb(0,62,170); 
+background: -moz-linear-gradient(top,  rgba(0,62,170,1) 0%, rgba(0,42,127,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(0,62,170,1) 0%,rgba(0,42,127,1) 100%); 
+background: linear-gradient(to bottom,  rgba(0,62,170,1) 0%,rgba(0,42,127,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003eaa', endColorstr='#002a7f',GradientType=0 );
+*/
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .m-sel-btn-line {
+        border-right: none;
+        border-left: none;
+    }
+
+    #adv-done .mi-sel-box {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    #adv-done .m-sel-btn {
+        flex: 0 0 33%;
+        font-size: 0.8rem;
+    }
+}
+
+/*----------------------------------------
+  mi-all-box
+----------------------------------------*/
+#adv-done .mi-box {
+    /*background-color: #fefefe;*/
+}
+
+#adv-done .mi-box-lg {
+    /*background-color: #f6f6f6;*/
+    /*padding-bottom: 5%;*/
+}
+
+#adv-done .mi-box-md {
+    /*padding-bottom: 1%;*/
+}
+
+#adv-done .mi-box-mg {
+    background-color: #efefef;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3d3d3d+0,1c1c1c+100 */
+    background: rgb(61, 61, 61); /* Old browsers */
+    background: -moz-linear-gradient(
+        top,
+        rgba(61, 61, 61, 1) 0%,
+        rgba(28, 28, 28, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        top,
+        rgba(61, 61, 61, 1) 0%,
+        rgba(28, 28, 28, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        rgba(61, 61, 61, 1) 0%,
+        rgba(28, 28, 28, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#1c1c1c',GradientType=0 ); /* IE6-9 */
+}
+
+#adv-done .mi-box-lb {
+    background-color: #f4faff;
+    background-color: #f9f9f9;
+    padding-bottom: 2%;
+
+    /*background: rgb(11,59,107); 
+background: -moz-linear-gradient(left,  rgba(11,59,107,1) 0%, rgba(18,98,168,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(11,59,107,1) 0%,rgba(18,98,168,1) 100%); 
+background: linear-gradient(to right,  rgba(11,59,107,1) 0%,rgba(18,98,168,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b3b6b', endColorstr='#1262a8',GradientType=1 ); */
+}
+
+#adv-done .mi-box-bg-rain {
+    /*background-image: url(css-img/bg-Major-Products.jpg);*/
+    background-position: center;
+}
+
+#adv-done .mi-box-bg-call {
+    background-image: url(css-img/bg-call.jpg);
+    background-position: center;
+}
+
+#adv-done .mi-box-bg-Circuit {
+    /*background-image: url(css-img/bg-Circuit.png);
+    	background-image: url(css-img/bg-event.png);*/
+    background-repeat: repeat;
+
+    background-color: #34b1c4;
+
+    background-color: #f3f3f3;
+
+    background-color: #ffffff;
+
+    /*background-image: url(css-img/ny-all-bgd.png);*/
+    background-position: center;
+
+    /*padding-bottom: 5%;*/
+}
+
+#adv-done .mi-box-bg-Circuit-dcr {
+    /*background-image: url(css-img/ny-all-bgd.png);*/
+    background-position: center;
+}
+/*#adv-done .mi-bg-dcr{
+        background-image: url(images/ny-all-bgd.png);
+    background-position: center;
+}*/
+
+#adv-done .mi-box-bg-Circuit-bg {
+    background-color: #980018;
+    background-color: #34b1c4;
+}
+
+#adv-done .mi-box-bg-Field {
+    /*background-image: url(css-img/bg-Field.png);*/
+    background-position: center;
+    background-color: #f1f1f1;
+}
+
+#adv-done .mi-box-bg-case {
+    background-image: url(css-img/bg-case.png);
+    background-position: center;
+
+    background-color: #00216e;
+    background-color: #ffffff;
+}
+
+#adv-done .mi-box-bg-event {
+    /*background-image: url(css-img/bg-event.png);*/
+    background-repeat: repeat;
+
+    background-color: #222222;
+}
+
+#adv-done .mi-box-bg-pd {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#010b1f+0,1a3d8e+100 */
+    background: rgb(1, 11, 31); /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        rgba(1, 11, 31, 1) 0%,
+        rgba(26, 61, 142, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        rgba(1, 11, 31, 1) 0%,
+        rgba(26, 61, 142, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        rgba(1, 11, 31, 1) 0%,
+        rgba(26, 61, 142, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010b1f', endColorstr='#1a3d8e',GradientType=1 ); /* IE6-9 */
+}
+
+#adv-done .mi-box-wall {
+    max-width: 1140px;
+    padding: 2%;
+    /*padding-bottom: 5%;*/
+    margin: auto;
+
+    /*background-color: #005ab9;
+        background-color: #f3f3f3;
+            background-color: #ffffff;*/
+
+    border-radius: 10px;
+
+    padding-bottom: 5%;
+    padding-top: 5%;
+    /*box-shadow: 3px 3px 5px 6px #2b83e0;*/
+}
+
+#adv-done .mi-box-wall-tit {
+    font-size: 2.5rem;
+    color: #151515;
+    color: #1b4c9e;
+    text-align: center;
+    line-height: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+    letter-spacing: -1px;
+}
+
+#adv-done .mi-box-wall-tit-w {
+    color: #fefefe;
+}
+
+#adv-done .mi-box-wall-tit-se {
+    font-size: 0.9rem;
+    color: #1b4c9e;
+    line-height: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+#adv-done .mi-box-wall-tit-se-w {
+    color: #fefefe;
+}
+
+#adv-done .mi-box-wall-line {
+    margin: auto;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+#adv-done .mi-box-wall-tit-left {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #fefefe;
+}
+
+#adv-done .mi-box-wall-tit-second {
+    font-size: 1.8rem;
+    color: #151515;
+    color: #fefefe;
+    text-align: left;
+    line-height: 2rem;
+    font-weight: bold;
+    margin-bottom: 3%;
+    border-bottom: 1px solid #c3c3c3;
+    padding-bottom: 2%;
+}
+
+#adv-done .mi-box-wall-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+#adv-done .mi-box-wall-btn {
+    width: 60%;
+    margin: auto;
+}
+
+#adv-done .mi-box-wall-flex-jc-fs {
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .mi-box-wall-btn {
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+    #adv-done .mi-box {
+        /*background-color: #fefefe;
+    	width: 85%;*/
+        margin: auto;
+
+        padding: 0% 6%;
+    }
+
+    #adv-done .mi-box-wall {
+        width: 100%;
+        padding: 3%;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+
+    #adv-done .mi-box-wall-tit {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        /*margin-bottom: 1.5rem;*/
+        margin-top: 1.5rem;
+    }
+
+    #adv-done .mi-box-wall-tit-second {
+        font-size: 1.5rem;
+    }
+
+    #adv-done .mi-box-wall-tit-left {
+        margin-top: 2rem;
+    }
+
+    #adv-done .mi-box-bg-Circuit {
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    #adv-done .mi-box-bg-rain {
+        padding-bottom: 10%;
+    }
+}
+
+/*----------------------------------------
+  mi-聯繫資料
+----------------------------------------*/
+#adv-done .mi-call-info {
+    text-align: center;
+}
+
+#adv-done .mi-call-info a {
+    font-size: 1.1rem;
+    color: #505050;
+    color: #e2e2e2;
+
+    /*border: 1px solid;*/
+    border-radius: 10px;
+    padding: 5px 20px;
+    line-height: 2;
+
+    /*background-color: #1d1d1d;*/
+}
+
+#adv-done .mi-call-info-sp {
+    margin-right: 2%;
+}
+
+#adv-done .mi-call-info-one {
+    margin-top: 1rem;
+    margin-bottom: 2%;
+}
+
+#adv-done .mi-call-info-two {
+    margin-bottom: 1rem;
+}
+
+#adv-done .mi-call-btn {
+    width: 30%;
+    margin: auto;
+}
+
+/*----------------------------------------
+  mi-選擇功能
+----------------------------------------*/
+#adv-done .mi-pick {
+    background-color: #f3f3f3;
+    background-color: #0e275f;
+    background: hsla(221, 0%, 100%, 0.9);
+    padding: 2%;
+    padding-bottom: 0%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+
+    background-color: #0e2558;
+    border: 1px solid #0f4dad;
+}
+
+#adv-done .mi-pick-l {
+    width: 50%;
+}
+
+#adv-done .mi-pick-r {
+    width: 50%;
+}
+
+#adv-done .mi-pick-l-box {
+    margin-bottom: 2rem;
+}
+
+#adv-done .mi-pick-l-box-tit {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    color: #fefefe;
+}
+
+#adv-done .mi-pick-l-box-item {
+    border: 1px solid #949494;
+    padding: 1%;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    color: #505050;
+    cursor: pointer;
+    margin-bottom: 0.6rem;
+    background-color: #fefefe;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .mi-pick {
+        padding: 7%;
+        padding-bottom: 0;
+    }
+
+    #adv-done .mi-pick-l {
+        width: 100%;
+    }
+
+    #adv-done .mi-pick-r {
+        width: 100%;
+    }
+
+    #adv-done .mi-pick-l-box-tit {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+        width: 100%;
+    }
+
+    #adv-done .mi-call-btn {
+        width: 85%;
+    }
+
+    #adv-done .mi-call-info-sp {
+        margin-right: 0%;
+    }
+}
+
+/*----------------------------------------
+  mi-盒子系列
+----------------------------------------*/
+#adv-done .mi-box-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#adv-done .mi-box-pd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#adv-done .mi-box-1-down {
+    width: 30%;
+    margin-top: 1%;
+}
+
+#adv-done .mi-box-pd-down {
+    width: 20%;
+    margin-right: 1%;
+}
+
+#adv-done .mi-box-1-style {
+    margin-bottom: 3rem;
+    margin-top: 2%;
+}
+
+#adv-done .mi-box-1-sp {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#adv-done .mi-box-1-pb {
+    padding-bottom: 3rem;
+}
+
+#adv-done .mi-box-1-5 {
+    /*background-color: #eaeaea;*/
+    border-radius: 10px;
+    /*padding: 20px;*/
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 5%;
+    width: 45%;
+    margin: auto;
+}
+
+#adv-done .mi-box-zero-10 {
+    width: 10%;
+    margin: auto;
+}
+
+#adv-done .mi-box-2 {
+    /*background-color: #eaeaea;*/
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 5%;
+    width: 50%;
+    margin: auto;
+}
+
+#adv-done .mi-box-live-l {
+    width: 60%;
+}
+
+#adv-done .mi-box-live-r {
+    width: 40%;
+}
+
+#adv-done .mi-photo-2 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#adv-done .mi-photo-3 {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#adv-done .mi-photo-7 {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#adv-done .mi-box-3 {
+    border-radius: 10px;
+    padding: 1%;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 5%;
+
+    /* margin: auto;*/
+
+    width: 33.3333%;
+    width: 25%;
+    align-items: flex-start;
+}
+
+#adv-done .mi-box-3-icon {
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 5%;
+
+    /* margin: auto;*/
+
+    width: 30%;
+    align-items: flex-start;
+}
+
+#adv-done .mi-box-7 {
+    border-radius: 10px;
+    /*padding: 20px;*/
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 5%;
+    width: 70%;
+    margin: auto;
+}
+
+#adv-done .mi-cloud {
+    text-align: left;
+}
+
+#adv-done .mi-cloud-tit {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #525252;
+    font-weight: bold;
+}
+
+#adv-done .mi-cloud-con {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    color: #545454;
+}
+
+#adv-done .mi-call-con {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #888888;
+    color: #fefefe;
+}
+
+#adv-done .mi-call-con-b {
+    margin-bottom: 2%;
+    color: #fefefe;
+}
+
+#adv-done .mi-cloud-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 2px 20px;
+    color: #34b1c4;
+    /* background: #ffffff; */
+    border: 1px solid #34b1c4;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    width: 42%;
+}
+
+#adv-done .mi-cloud-btn span {
+    cursor: pointer;
+    line-height: 15px;
+    position: relative;
+    transition: 0.5s;
+}
+
+#adv-done .mi-cloud-btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.1s;
+}
+
+#adv-done .mi-cloud-btn:hover span {
+    padding-right: 15px;
+}
+
+#adv-done .mi-cloud-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#adv-done .mi-big-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 20px;
+    color: #34b1c4;
+    /* background: #ffffff; */
+    border: 1px solid #34b1c4;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 60%;
+
+    color: #fefefe;
+    border: 1px solid #fefefe;
+}
+
+#adv-done .mi-big-btn span {
+    cursor: pointer;
+    line-height: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+
+#adv-done .mi-big-btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.1s;
+}
+
+#adv-done .mi-big-btn:hover span {
+    padding-right: 25px;
+}
+
+#adv-done .mi-big-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#adv-done .mi-box-3-gift {
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 30%;
+    margin: auto;
+}
+
+#adv-done .mi-box-1 {
+    /*background-color: #eaeaea;*/
+    /*border-radius: 10px;*/
+    /*padding-top: 20px;*/
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    /*margin-bottom: 5%;*/
+    width: 100%;
+    margin: auto;
+}
+
+#adv-done .mi-pick-info {
+    background-image: url(css-img/ny-pick-ps.png);
+    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    height: 500px;
+    width: 100%;
+}
+
+#adv-done .mi-box-s-tit {
+    font-size: 1.5rem;
+    color: #fee4a4;
+
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#adv-done .mi-gift-tit {
+    margin-bottom: 5%;
+}
+
+#adv-done .mi-gift-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+#adv-done .mi-gift-box-gift {
+    border-radius: 10px;
+    /*padding: 20px;*/
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 5%;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+#adv-done .mi-pd-box {
+    /*margin-bottom: 10%;*/
+    background-color: #ffd23e;
+    padding: 6%;
+    border-radius: 10px;
+    border: 2px solid #fefefe;
+    box-shadow: 3px 3px 5px 6px #371e6d;
+}
+
+#adv-done .mi-pd-box-pd {
+    border-radius: 10px;
+    /*padding: 20px;*/
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 5%;
+    width: 20%;
+    margin-bottom: 5%;
+}
+
+#adv-done .mi-gift-box-gift-font {
+    margin: auto;
+
+    background-color: #fefefe;
+
+    border-radius: 0 0 25px 25px;
+    padding: 10%;
+    color: #34b1c4;
+    text-align: left;
+    /*border:5px solid #3fb7e6;*/
+
+    width: 100%;
+}
+
+#adv-done .mi-gift-box-gift-coin {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#adv-done .mi-gift-box-gift-info {
+    margin-bottom: 2%;
+    font-size: 0.9rem;
+}
+
+#adv-done .mi-gift-btn {
+}
+
+#adv-done .mi-gift-box-gift-font-right {
+    margin: auto;
+
+    background-color: #fefefe;
+    border-radius: 15px;
+    padding: 8%;
+    color: #34b1c4;
+    text-align: left;
+    /*border: 2px solid #3fb7e6;*/
+}
+
+#adv-done .mi-gift-box-gift-coin-right {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#adv-done .mi-gift-box-gift-info-right {
+    margin-bottom: 2%;
+    font-size: 0.3rem;
+}
+
+#adv-done .mi-gift-box-gift-img {
+    margin: auto;
+    margin-bottom: 7%;
+}
+
+#adv-done .mi-pd-box-pd-font {
+    color: #fee4a4;
+    margin: auto;
+}
+
+#adv-done .mi-pd-box-pd-font-info {
+}
+
+#adv-done .mi-pd-box-pd-coin {
+    font-size: 1.5rem;
+}
+
+#adv-done .mi-pd-box-pd-img {
+    margin-bottom: 7%;
+}
+
+#adv-done .mi-box-3-base {
+    color: #fefefe;
+    margin-bottom: 4%;
+    padding-top: 3%;
+}
+
+#adv-done .mi-box-3-c01 {
+    background-color: #37c9de;
+}
+#adv-done .mi-box-3-c02 {
+    background-color: #40a0d2;
+}
+#adv-done .mi-box-3-c03 {
+    background-color: #1c7bc5;
+}
+#adv-done .mi-box-3-c04 {
+    background-color: #feae09;
+}
+#adv-done .mi-box-3-c05 {
+    background-color: #de3737;
+}
+#adv-done .mi-box-3-c06 {
+    background-color: #fe7509;
+}
+
+#adv-done .mi-box-3-pd {
+    /*background-color: #f3f3f3;*/
+    background-color: #0e2558;
+    background-color: #0e275f;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1rem;
+    /*text-align: center;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 5%;
+    width: 32%;
+
+    border: 1px solid #a7a7a7;
+    border: 1px solid #0f4dad;
+
+    margin: 2% 0.6%;
+}
+
+#adv-done .mi-box-3-pd-for-left {
+    /*margin-right: 2%;*/
+}
+
+#adv-done .mi-fin-pd-right {
+    margin: initial;
+    align-content: flex-start;
+}
+
+#adv-done .mi-box-3-gift-fin {
+    margin: inherit;
+    margin-left: 0%;
+}
+
+/*----------------------------------------
+  mi-影片系列
+----------------------------------------*/
+
+#adv-done .mi-video-l {
+    background-image: url(css-img/mi-video-bg.png);
+    background-position: center;
+
+    width: 60%;
+    width: 100%;
+    padding: 5%;
+}
+
+#adv-done .mi-video-r {
+    width: 40%;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    /*padding-top: 5%;*/
+    /*background-color: #dedede;*/
+
+    background-color: #ffffff;
+    margin-top: 2%;
+    /*margin-bottom: 2%;*/
+
+    background: hsla(221, 0%, 100%, 0.9);
+}
+
+#adv-done .mi-video-r-tit {
+    font-size: 3rem;
+    color: #6d6d6d;
+    color: #828282;
+    color: #2f2f2f;
+    margin-top: 2%;
+    font-weight: bold;
+    /*margin-bottom: 0.5rem;*/
+}
+
+#adv-done .mi-video-r-tit-s {
+    font-size: 1.5rem;
+    /*letter-spacing: 0.2rem;*/
+    margin-bottom: 1%;
+    color: #828282;
+    color: #6d6d6d;
+    /*color: #a9a9a9;*/
+
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 1%;
+
+    width: 95%;
+}
+
+#adv-done .mi-video-r-de {
+    margin-bottom: 2%;
+    color: #505050;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+#adv-done .mi-video-r-de-item {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+#adv-done .mi-video-r-price {
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+#adv-done .mi-video-btn {
+    width: 50%;
+}
+
+#adv-done .mi-video-btn-w {
+    width: 25%;
+}
+
+#adv-done .mi-box-icon {
+    margin-bottom: 5%;
+    margin: auto;
+    padding-bottom: 4%;
+}
+
+#adv-done .mi-box-icon-tit {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+
+    /*color: #fefefe;*/
+}
+
+#adv-done .mi-box-icon-item {
+    /*color: #dcdcdc;*/
+    color: #565656;
+}
+
+#adv-done .mi-box-icon-tit-smb {
+    margin-bottom: 14%;
+}
+
+#adv-done .mi-box-icon-tit-smb-02 {
+    margin-bottom: 7%;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .mi-gift-box-gift-coin-right {
+        font-size: 1.4rem;
+    }
+
+    #adv-done .mi-gift-box-gift-coin {
+        font-size: 2rem;
+    }
+
+    #adv-done .mi-gift-box-gift-info {
+        font-size: 1.5rem;
+    }
+
+    #adv-done .mi-gift-box-gift-info-right {
+        font-size: 1.2rem;
+    }
+
+    #adv-done .mi-gift-box-gift-font-right {
+        padding: 13%;
+    }
+
+    #adv-done .mi-box-3-gift-fin {
+        margin: auto;
+        margin-left: 0%;
+    }
+
+    #adv-done .mi-box-3-gift {
+        width: 50%;
+    }
+
+    #adv-done .mi-gift-box-gift-font {
+        width: 100%;
+        padding: 5%;
+    }
+
+    #adv-done .mi-add-tit-mb {
+        margin-bottom: 5%;
+    }
+
+    #adv-done .mi-pick-info {
+        background-image: url(css-img/ny-pick-ps-mb.png);
+        background-position: center;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        height: 1100px;
+        width: 100%;
+    }
+
+    #adv-done .mi-box-1-5 {
+        width: 100%;
+    }
+
+    #adv-done .mi-box-zero-10 {
+        display: none;
+    }
+
+    #adv-done .mi-pd-box {
+        margin-bottom: 15%;
+        margin: auto;
+    }
+
+    #adv-done .mi-pd-box-pd-font {
+        padding: 1%;
+    }
+
+    #adv-done .mi-box-s-tit {
+        margin-bottom: 8%;
+        font-size: 1.2rem;
+    }
+
+    #adv-done .mi-gift-box-gift {
+        width: 45%;
+    }
+
+    #adv-done .mi-pd-box-pd {
+        width: 50%;
+    }
+
+    #adv-done .mi-video-r-tit {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+
+    #adv-done .mi-box-3-base {
+        padding-top: 10%;
+        margin-bottom: 8%;
+    }
+
+    #adv-done .mi-video-l {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    #adv-done .mi-video-r {
+        width: 100%;
+        text-align: center;
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-bottom: 2rem;
+
+        width: 100%;
+        margin: auto;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    #adv-done .mi-video-r-tit-s {
+        margin-bottom: 6%;
+    }
+
+    #adv-done .mi-box-1-style {
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+
+    #adv-done .mi-video-v {
+        height: 200px;
+    }
+
+    #adv-done .mi-box-2 {
+        width: 90%;
+        padding: 0px;
+        /*margin-bottom: 10%;*/
+    }
+
+    #adv-done .mi-box-3 {
+        width: 80%;
+        width: 100%;
+        padding: 0;
+    }
+
+    #adv-done .mi-box-3-icon {
+        width: 80%;
+        width: 100%;
+        padding: 0;
+    }
+
+    #adv-done .mi-video-btn-w {
+        width: 90%;
+        margin: auto;
+    }
+
+    #adv-done .mi-box-1-down {
+        width: 90%;
+    }
+
+    #adv-done .mi-video-r-price {
+        margin-bottom: 5%;
+        font-size: 1.5rem;
+    }
+
+    #adv-done .mi-box-pd-down {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #adv-done .mi-box-3-pd-for-left {
+        margin-right: 0%;
+    }
+
+    #adv-done .mi-video-r-de {
+        margin-bottom: 5%;
+        margin-left: 23%;
+    }
+
+    #adv-done .mi-box-7 {
+        width: 100%;
+    }
+
+    #adv-done .mi-cloud-btn {
+        width: 100%;
+    }
+
+    #adv-done .mi-cloud-con {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #adv-done .mi-pick-info {
+        background-image: url(css-img/ny-pick-ps-mb-s.png);
+        background-position: center;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        height: 760px;
+        width: 100%;
+    }
+}
+
+/*----------------------------------------
+  mi-產品系列
+----------------------------------------*/
+#adv-done .mi-pd {
+    margin: auto;
+}
+
+#adv-done .mi-pd-tit {
+    font-size: 1.2rem;
+    color: #6b6b6b;
+    color: #f3fdff;
+    color: #3a3a3a;
+    margin-bottom: 1rem;
+    font-weight: bold;
+
+    border-bottom: 1px solid #e1af0c;
+    padding-bottom: 6%;
+}
+
+#adv-done .mi-pd-tit-s {
+    color: #a0a0a0;
+    color: #f3fdff;
+    color: #4e4e4e;
+    margin-bottom: 10%;
+}
+
+#adv-done .mi-pd-tit-sm {
+    font-size: 0.8rem;
+}
+
+#adv-done .mi-pd-price {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    color: #828282;
+    color: #ffffff;
+    color: #4e4e4e;
+}
+
+#adv-done .mi-pd-item {
+    margin-bottom: 1rem;
+    color: #848484;
+    color: #f3fdff;
+    color: #4e4e4e;
+    background-color: #fefefe;
+    border-radius: 10px;
+    /* padding-left: 5%; */
+    line-height: 1.3rem;
+    padding: 2% 0%;
+    padding-bottom: 5%;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-align: left;
+    /* border-bottom: 1px solid #9c7be2; */
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 3%;
+    margin-bottom: 10%;
+}
+
+#adv-done .mi-pd-item li {
+    border-bottom: 1px solid #ffd23e;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+#adv-done .mi-pd-item-one-h {
+    min-height: 220px;
+}
+
+#adv-done .mi-pd-item-two-h {
+    min-height: 260px;
+}
+
+#adv-done .mi-pd-item-three-h {
+    min-height: 200px;
+}
+
+#adv-done .mi-pd-item-four-h {
+    min-height: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .mi-pd-item-one-h {
+        min-height: 0px;
+    }
+
+    #adv-done .mi-pd-item-two-h {
+        min-height: 0px;
+    }
+
+    #adv-done .mi-pd-item-three-h {
+        min-height: 0px;
+    }
+
+    #adv-done .mi-pd-item-four-h {
+        min-height: 0px;
+    }
+
+    #adv-done .mi-pd-tit {
+        font-size: 1rem;
+    }
+
+    #adv-done .mi-mt5-mb {
+        margin-top: 5%;
+    }
+
+    #adv-done .mi-box-2-nmp {
+        margin-bottom: 0%;
+    }
+
+    #adv-done .mi-box-3-pd {
+        width: 100%;
+    }
+}
+
+/*----------------------------------------
+  mi-專人服務
+----------------------------------------*/
+#adv-done .mi-connect {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3d3d3d+0,1c1c1c+100 */
+    background: rgb(61, 61, 61); /* Old browsers */
+    background: -moz-linear-gradient(
+        top,
+        rgba(61, 61, 61, 1) 0%,
+        rgba(28, 28, 28, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        top,
+        rgba(61, 61, 61, 1) 0%,
+        rgba(28, 28, 28, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        rgba(61, 61, 61, 1) 0%,
+        rgba(28, 28, 28, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#1c1c1c',GradientType=0 ); /* IE6-9 */
+}
+
+/*----------------------------------------
+  mi-場域應用
+----------------------------------------*/
+#adv-done .mi-field-info {
+    width: 100%;
+}
+
+#adv-done .mi-field-info-w {
+    font-size: 1.5rem;
+}
+
+/*----------------------------------------
+  mi-應用案例
+----------------------------------------*/
+#adv-done .mi-case-l {
+    /*background-image: url(css-img/universe.jpg);*/
+    background-position: center;
+
+    width: 50%;
+    background-color: #fefefe;
+    padding: 2%;
+    /*padding: 2%;*/
+}
+
+#adv-done .mi-case-r {
+    width: 50%;
+    background-color: #fefefe;
+    padding: 0% 2%;
+}
+
+#adv-done .mi-case-r-tit {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#adv-done .mi-case-r-tit-s {
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+    color: #505050;
+
+    background-color: #f1f1f1;
+    padding: 3%;
+}
+
+#adv-done .mi-case-r-tit-s span {
+    color: #c30000;
+    font-size: 1.7rem;
+}
+
+#adv-done .mi-case-r-de {
+    margin-bottom: 5%;
+}
+
+#adv-done .mi-case-r-de-item {
+    font-size: 0.8rem;
+    color: #505050;
+}
+
+#adv-done .mi-case-r-price {
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+#adv-done .mi-case-btn {
+    width: 50%;
+    color: #fefefe;
+    font-size: 0.9rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+#adv-done .mi-case-btn-s {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+#adv-done .mi-case-btn-w {
+    width: 50%;
+}
+
+#adv-done .mi-video {
+    margin: auto;
+    width: 100%;
+}
+
+#adv-done .mi-v-tit {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #525252;
+    font-weight: bold;
+    color: #dadada;
+    text-align: left;
+}
+
+#adv-done .mi-v-tit-bm {
+    margin-bottom: 1rem;
+}
+
+#adv-done .mi-v-tit-time {
+    font-size: 1.5rem;
+}
+
+#adv-done .mi-v-con {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    color: #8c8c8c;
+    color: #aaa;
+}
+
+#adv-done .mi-v-btn {
+    font-size: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 35px;
+    color: #fece01;
+    /* background: #ffffff; */
+    border: 1px solid #fece01;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+
+    transition: 0.3s;
+
+    width: 65%;
+}
+
+#adv-done .mi-v-btn:hover {
+    background-color: #fece01;
+    color: #2f2f2f;
+    transition: 0.3s;
+}
+
+#adv-done .mi-v-btn span {
+    cursor: pointer;
+    line-height: 15px;
+    position: relative;
+    transition: 0.3s;
+}
+
+#adv-done .mi-v-btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.1s;
+}
+
+#adv-done .mi-v-btn:hover span {
+    padding-right: 15px;
+}
+
+#adv-done .mi-v-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#adv-done .mi-v-btn-l {
+    margin-right: 3rem;
+}
+
+/*tr{
+    border: 1px solid!important;
+}
+
+td{
+    border: 1px solid!important;
+}
+
+th{
+    border: 1px solid!important;
+}*/
+
+#adv-done .mi-table {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #868686;
+    border: 1px solid #b4c6d4;
+}
+
+#adv-done .mi-table tr {
+    border: 1px solid #b4c6d4;
+}
+
+#adv-done .mi-table tr th {
+    border: 1px solid #b4c6d4;
+    padding: 10px 5px;
+}
+
+#adv-done .mi-table tr .mi-rec-tit {
+    color: #326aaf;
+}
+
+#adv-done .mi-table tr .mi-rec-tit-g {
+    color: #4e9446;
+}
+
+#adv-done .mi-table .mi-tbox-blue {
+    background-color: #edfafd;
+    background-color: #eff8ff;
+    background-color: #fefefe;
+}
+
+#adv-done .mi-table .mi-tbox-gray {
+    background-color: #f5f5f5;
+}
+
+#adv-done .mi-table tr th a {
+    color: #72aaef;
+}
+
+#adv-done .mi-table-tit {
+    background-color: #3f89c3;
+    background-color: #34b1c4;
+    color: #ffffff;
+}
+
+#adv-done .mi-table .t-left {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .mi-v-tit-bm {
+        width: 90%;
+    }
+
+    #adv-done .mi-v-tit {
+        font-size: 1rem;
+    }
+
+    #adv-done .mi-big-btn {
+        width: 80%;
+        font-size: 0.8rem;
+        margin-top: 5%;
+    }
+
+    #adv-done .mi-mb-move {
+        overflow-x: auto;
+        white-space: nowrap;
+        webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+    }
+
+    #adv-done .mi-case-r-tit {
+        margin-top: 1rem;
+    }
+
+    #adv-done .mi-case-l {
+        width: 90%;
+        margin: auto;
+    }
+
+    #adv-done .mi-case-r {
+        width: 90%;
+        text-align: center;
+
+        text-align: center;
+        margin: auto;
+        margin-top: 5%;
+    }
+}
+
+/*----------------------------------------
+  mi-主打活動
+----------------------------------------*/
+#adv-done .mi-act-img {
+    margin-bottom: 0.5rem;
+}
+
+#adv-done .mi-act-tit {
+    width: 100%;
+    font-size: 2rem;
+    color: #fefefe;
+}
+
+#adv-done .mi-act-tit-s {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: #9c9c9c;
+}
+
+#adv-done .mi-act-btn {
+    margin: auto;
+    width: 65%;
+}
+
+/*----------------------------------------
+  mi-btn
+----------------------------------------*/
+
+#adv-done .mi-img-100 {
+    width: 100%;
+}
+
+#adv-done .mi-img-20 {
+    width: 20%;
+}
+
+#adv-done .mi-img-50 {
+    width: 50%;
+}
+
+#adv-done .mi-img-60 {
+    width: 60%;
+}
+
+#adv-done .mi-img-70 {
+    width: 70%;
+}
+
+#adv-done .mi-img-80 {
+    width: 80%;
+}
+
+#adv-done .mi-img-80-02 {
+    width: 80%;
+}
+
+#adv-done .mi-img-90 {
+    width: 90%;
+}
+
+#adv-done .mi-btn {
+    padding: 6px 20px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    background-color: #ff8700;
+    /*background-color: #1b4c9e;*/
+    /*box-shadow: 0px 0px 14px #ffffff;
+	border: 2px solid #fefefe;*/
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    /*border-radius: 10px;*/
+
+    display: block;
+    width: 100%;
+    /*border-bottom: 3px solid #cecece;*/
+
+    cursor: pointer;
+
+    border-radius: 10px;
+}
+
+#adv-done .mi-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#adv-done .mi-btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.1s;
+}
+
+#adv-done .mi-btn:hover span {
+    padding-right: 15px;
+}
+
+#adv-done .mi-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#adv-done .mi-btn-og {
+    /*background-color: #ff8700;
+    border-bottom: 3px solid #484848;*/
+}
+
+#adv-done .mi-btn-gray {
+    background-color: #707070;
+
+    background-color: #183a87;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#adv-done .mi-btn:hover {
+    background-color: #ffa744;
+    background-color: #063582;
+    background-color: #e07700;
+    box-shadow: none;
+    border-bottom: none;
+}
+
+#adv-done .mi-btn-og:hover {
+    background-color: #e87c00;
+}
+
+#adv-done .mi-btn-gray:hover {
+    background-color: #505050;
+    background-color: #0d2969;
+    border: none;
+}
+
+#adv-done .mi-btn-nob {
+    border-bottom: none;
+}
+
+#adv-done .mi-case-btn span {
+    cursor: pointer;
+    /*display: inline-block;*/
+    position: relative;
+    transition: 0.5s;
+
+    line-height: 15px;
+}
+
+#adv-done .mi-case-btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.1s;
+}
+
+#adv-done .mi-case-btn:hover span {
+    padding-right: 5%;
+}
+
+#adv-done .mi-case-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .mi-img-80-02 {
+        width: 100%;
+    }
+
+    #adv-done .mi-img-70 {
+        width: 90%;
+    }
+
+    #adv-done .mi-img-50 {
+        width: 100%;
+    }
+
+    #adv-done .mi-btn {
+        /*padding: 10px 10px;*/
+    }
+
+    #adv-done .mi-act-btn {
+        width: 100%;
+    }
+
+    #adv-done .mi-img-60 {
+        width: 100%;
+    }
+
+    #adv-done .mi-img-80 {
+        width: 120%;
+    }
+}
+
+#adv-done .pc_menu--colored {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    position: fixed;
+    background-color: #3a2cb5;
+    color: #646871;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    padding-bottom: 0%;
+    padding-top: 0%;
+    max-width: 100%;
+}
+
+/*----------------------------------------
+  秀出規格表
+----------------------------------------*/
+#adv-done .m-system-str {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    display: block;
+}
+
+#adv-done .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    z-index: 200;
+}
+
+#adv-done .modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 5px;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#adv-done .is-hide {
+    display: none;
+}
+
+#adv-done .mi-format-hide {
+    display: none;
+    margin-bottom: 3%;
+}
+
+#adv-done .mi-format-open {
+    display: block;
+}
+
+/*----------------------------------------
+  輪播效果
+----------------------------------------*/
+#adv-done .banner {
+    max-width: 1200px;
+    height: 900px;
+    /*border: 1px solid #808080;*/
+    position: relative;
+    overflow: hidden;
+}
+
+#adv-done .banner .img {
+    width: 50000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.case-img {
+    width: 1200px;
+    height: 900px;
+}
+
+.case-img-01 {
+    background: #b0c2c9 url(../images/case-img-01.jpg) center bottom no-repeat;
+    background-position: center;
+}
+
+.case-img-02 {
+    background: #b0c2c9 url(../images/case-img-02.jpg) center bottom no-repeat;
+    background-position: center;
+}
+
+.case-img-03 {
+    background: #b0c2c9 url(../images/case-img-03.jpg) center bottom no-repeat;
+    background-position: center;
+}
+
+.case-img-04 {
+    background: #b0c2c9 url(../images/case-img-04.jpg) center bottom no-repeat;
+    background-position: center;
+}
+
+#adv-done .banner .img img {
+    width: 1200px;
+    height: 900px;
+}
+
+#adv-done .banner .img li {
+    float: left;
+}
+
+#adv-done .banner .num {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0px;
+    text-align: center;
+    font-size: 0px;
+}
+
+#adv-done .banner .num li {
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+
+#adv-done .banner .num li.on {
+    background-color: #ff6a00;
+}
+
+#adv-done .banner .btn {
+    width: 50px;
+    height: 150px;
+    background-color: #a0a0a0;
+    opacity: 0.5;
+    filter: alpha(opacity: 0.5);
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 150px;
+    font-size: 40px;
+    color: #fff;
+    font-family: '宋體';
+    display: none;
+}
+
+#adv-done .banner .btn_l {
+    right: 0px;
+}
+
+#adv-done .banner .btn_r {
+    left: 0px;
+}
+
+#adv-done .banner:hover .btn {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .pc_menu--colored {
+        top: 69px;
+    }
+
+    #adv-done .banner {
+        max-width: 300px;
+        width: 100%;
+        margin: auto;
+        height: 650px;
+    }
+
+    .case-img {
+        max-width: 300px;
+        height: 650px;
+    }
+
+    .case-img-01 {
+        background: #b0c2c9 url(../images/case-img-mb-01-1215.jpg) center bottom no-repeat;
+        background-position: center;
+    }
+
+    .case-img-02 {
+        background: #b0c2c9 url(../images/case-img-mb-02-1215.jpg) center bottom no-repeat;
+        background-position: center;
+    }
+
+    .case-img-03 {
+        background: #b0c2c9 url(../images/case-img-mb-03-1215.jpg) center bottom no-repeat;
+        background-position: center;
+    }
+
+    .case-img-04 {
+        background: #b0c2c9 url(../images/case-img-mb-04-1215.jpg) center bottom no-repeat;
+        background-position: center;
+    }
+
+    #adv-done .mi-format-hide {
+        margin-bottom: 8%;
+    }
+}
+
+/*----------------------------------------
+  m-table Style
+----------------------------------------*/
+#adv-done .m-table {
+    box-sizing: border-box;
+    /*padding: 0 5% 3% 5%;*/
+    /*border: 1px solid #e8e8e8;*/
+    border: 20px solid #fefefe;
+}
+#adv-done .m-table table {
+    /*border: 20px solid #fefefe;*/
+    background-color: #fefefe;
+    border: 1px solid #e8e8e8;
+    color: #404040;
+}
+#adv-done .m-table table {
+    text-align: center;
+    /*margin-bottom: 5%;*/
+}
+
+/*----------------------------------------
+四大說明 table
+----------------------------------------*/
+
+#adv-done .m-table {
+    width: 100%;
+    margin-bottom: 2%;
+    overflow: auto;
+}
+
+#adv-done .table11_6 {
+    width: 100%;
+    border: 0;
+}
+
+#adv-done .m-table-first {
+    float: left;
+    margin-right: 2%;
+}
+
+#adv-done .table11_6 th {
+    background-color: #96c7ed;
+    color: #000000;
+}
+#adv-done .table11_6,
+#adv-done .table11_6 th,
+#adv-done .table11_6 td {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 4px;
+    border-collapse: collapse;
+    padding: 0.6rem;
+}
+#adv-done .table11_6 th,
+#adv-done .table11_6 td {
+    border: 1px solid #73b4e7;
+    border-width: 1px 0 1px 0;
+    border: 2px inset #ffffff;
+}
+#adv-done .table1-tit {
+    font-weight: bold;
+}
+#adv-done .table11_6 tr {
+    border: 1px solid #ffffff;
+}
+#adv-done .table11_6 tr:nth-child(odd) {
+    background-color: #dcecf9;
+}
+#adv-done .table11_6 tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .m-table {
+        border: 10px solid #fefefe;
+    }
+
+    #adv-done .table11_6 {
+        width: 100%;
+        border: 0;
+        /*margin-bottom: 5%;*/
+    }
+
+    #adv-done .m-table-first {
+        float: left;
+        margin-right: 0%;
+    }
+
+    #adv-done .table11_6,
+    #adv-done .table11_6 th,
+    #adv-done .table11_6 td {
+        font-size: 0.5rem;
+        padding: 0.5rem;
+    }
+}
+
+#adv-done .mi-mjpd {
+    margin-bottom: 2%;
+    margin-top: 2rem;
+}
+
+#adv-done .mi-mjpd-box {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#adv-done .mi-mjpd-box-btn {
+    margin: 0% 1%;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1b4c9e;
+    background-color: #616161;
+    padding: 6px 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    /*border: 1px solid #0a4b67;*/
+
+    /*background: rgb(0,79,191);
+    background: -moz-linear-gradient(top, rgba(0,79,191,1) 0%, rgba(0,55,148,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,79,191,1) 0%,rgba(0,55,148,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,79,191,1) 0%,rgba(0,55,148,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004fbf', endColorstr='#003794',GradientType=0 );*/
+}
+
+#adv-done .mi-main-bbox {
+    text-align: center;
+}
+
+#adv-done .mi-main-btn {
+    padding: 2% 10%;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    /* background-color: #def4fc; */
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    /*width: 80%;*/
+    cursor: pointer;
+    border-radius: 10px;
+    /*margin-top: 10%;*/
+    border: 2px solid #3fb7e6;
+    border: 2px solid #c1e2ef;
+}
+
+#adv-done .mi-main-btn span {
+    cursor: pointer;
+    /*display: inline-block;*/
+    position: relative;
+    transition: 0.5s;
+
+    line-height: 14px;
+}
+
+#adv-done .mi-main-btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.1s;
+}
+
+#adv-done .mi-main-btn:hover span {
+    padding-right: 15px;
+}
+
+#adv-done .mi-main-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*#adv-done .current{
+	background-color: #1b4c9e;
+}*/
+
+#adv-done .mi-first-con {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    color: #525252;
+    width: 95%;
+}
+
+#adv-done .mi-first-con-sp {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .mi-first-con {
+        font-size: 1rem;
+    }
+
+    #adv-done .mi-mjpd {
+        margin-bottom: 7%;
+    }
+
+    #adv-done .mi-mjpd-box-btn {
+        padding: 6px 60px;
+        margin-bottom: 15px;
+        display: block;
+    }
+}
+
+#adv-done button.active {
+    background: #717171;
+    color: #fefefe;
+}
+
+#adv-done .mi-kv-tit {
+    background: url(../images/ny-kv-tit.png) center bottom no-repeat;
+    background-position: center;
+}
+
+#adv-done .mi-btn-h:hover {
+    opacity: 0.8;
+}
+
+#adv-done .mi-pd-btn {
+    padding: 3px 20px;
+    text-decoration: none;
+    color: #34b1c4;
+    color: #ffffff;
+    /*color: #4e4e4e;*/
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    background-color: #3b158c;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10%;
+    border: 2px solid #3fb7e6;
+    border: 2px solid #ffffff;
+    border: 2px solid #4e4e4e;
+    /*box-shadow: 1px 1px 2px 1px #def4fc;*/
+    transition: 0.5s;
+}
+
+#adv-done .mi-pd-btn span {
+    cursor: pointer;
+    /*display: inline-block;*/
+    position: relative;
+    transition: 0.3s;
+
+    line-height: 15px;
+}
+
+#adv-done .mi-pd-btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.1s;
+}
+
+#adv-done .mi-pd-btn:hover span {
+    padding-right: 15px;
+    color: #fefefe;
+}
+
+#adv-done .mi-pd-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#adv-done .mi-pd-btn:hover {
+    /*background-color:#abe0f3;
+    border-bottom: none;*/
+
+    box-shadow: none;
+
+    background-color: #3a2cb5;
+    color: #fefefe;
+    border: 2px solid #3b158c;
+}
+
+#adv-done .mi-pd-btn-right {
+    padding: 3px 20px;
+    text-decoration: none;
+    color: #34b1c4;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    /*background-color: #def4fc;*/
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10%;
+    border: 2px solid #3fb7e6;
+    border: 2px solid #c1e2ef;
+    box-shadow: 1px 1px 2px 1px #def4fc;
+}
+
+#adv-done .mi-pd-btn-right span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#adv-done .mi-pd-btn-right span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.1s;
+}
+
+#adv-done .mi-pd-btn-right:hover span {
+    padding-right: 15px;
+    color: #fefefe;
+}
+
+#adv-done .mi-pd-btn-right:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#adv-done .mi-pd-btn-right:hover {
+    background-color: #abe0f3;
+    border-bottom: none;
+
+    box-shadow: none;
+}
+
+#adv-done .mi-mp-3 {
+    margin-top: 3%;
+}
+
+#adv-done .mi-mb-2 {
+    margin-bottom: 2%;
+}
+
+#adv-done .mi-mb-1 {
+    margin-bottom: 1%;
+}
+
+#adv-done .mi-mb-3 {
+    margin-bottom: 3%;
+}
+
+#adv-done .mi-time-tit {
+    margin: auto;
+    margin-top: 4%;
+    background-color: #4fb0d6;
+    width: 70%;
+    padding: 1%;
+    border-radius: 20px;
+    color: #fefefe;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+    letter-spacing: 0.1rem;
+}
+
+#adv-done .mi-time-tit span {
+    font-size: 0.8rem;
+}
+
+#adv-done .mi-tit-blue {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #34b1c4;
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+#adv-done .mi-tit-r40 {
+    margin-left: 40%;
+}
+
+#adv-done .mi-tit-blue-s {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #34b1c4;
+    /*margin-bottom: 2%;*/
+}
+
+#adv-done .mi-high-con {
+    width: 90%;
+    color: #848484;
+    color: #e4fbff;
+
+    color: #4e4e4e;
+    color: #8a8a8a;
+}
+
+#adv-done .mi-final-link {
+    margin: auto;
+    width: 90%;
+}
+
+#adv-done .mi-case-bg {
+    /*background-image: url(css-img/ny-kv-bg.png);*/
+    background-position: center;
+    background-position: top;
+    /*background-color: #9a9a9a;*/
+    background-repeat: no-repeat;
+
+    padding: 5%;
+    padding-top: 1%;
+    justify-content: flex-end;
+}
+
+#adv-done .mi-case {
+    justify-content: flex-end;
+    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#adv-done .mi-case-box {
+    background-color: #fefefe;
+    transition: all 0.3s;
+    width: 60%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#adv-done .mi-case-box:hover {
+    opacity: 1;
+}
+
+#adv-done .mi-case-box-one {
+    padding: 2% 5%;
+    text-align: left;
+    background-color: #88cdea;
+    border-bottom: 1px solid #fefefe;
+
+    background-color: #34c4ba;
+}
+
+#adv-done .mi-case-box-one:hover {
+    background-color: #88ea92;
+
+    background-color: #34b1c4;
+
+    background-color: #22aba4;
+}
+
+#adv-done .mi-case-box-one-s {
+    text-align: center;
+}
+
+#adv-done .mi-main-green {
+    background-color: #34b1c4;
+    background-color: #3b158c;
+    background-color: #28076f;
+}
+
+#adv-done .mi-main-gray {
+    background-color: #f9f9f9;
+    background-color: #3b158c;
+}
+
+#adv-done .mi-bk-gt {
+    color: #ddd;
+}
+
+#adv-done .mi-bk-wf {
+    color: #fefefe;
+    /*color: #4e4e4e;*/
+}
+
+#adv-done .mi-bk-bf {
+    color: #4e4e4e;
+    color: #ffffff;
+    color: #ffcf00;
+
+    position: relative;
+}
+
+#adv-done .mi-ps-titline {
+    border-bottom: 1px solid #7b0c8b;
+    /* border-bottom: 1px solid #4e4e4e; */
+    padding-bottom: 2%;
+    width: 85%;
+        text-align: center;
+}
+
+#adv-done .mi-ps-titline-02 {
+    border-top: 1px solid #9ed9e2;
+    padding-top: 2%;
+}
+
+#adv-done .mi-bk-two {
+    background-color: #2f3539;
+    background-color: #3b158c;
+    background-color: #28076f;
+}
+
+#adv-done .mi-main-bk {
+    background-color: #393f43;
+}
+
+#adv-done .mi-case-all-bg {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-image: url(css-img/case-bg.jpg);
+    background-color: #34b1c4;
+}
+
+#adv-done .mi-fix-bg {
+    /*background-image: url(css-img/fix-main.png);*/
+    padding: 5%;
+    padding-top: 2%;
+    background-repeat: no-repeat;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bcedff+1,ffffff+57 */
+    background: #bcedff; /* Old browsers */
+    background: -moz-linear-gradient(top, #bcedff 1%, #ffffff 57%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #bcedff 1%, #ffffff 57%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #bcedff 1%,
+        #ffffff 57%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcedff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+#adv-done .mi-mb-kv-top {
+    padding-bottom: 0%;
+    padding-top: 3%;
+}
+
+#adv-done .mi-table tr .mi-th-br {
+    border-right: 2px solid #bfbfbf;
+}
+
+#adv-done .mi-table tr .mi-th-c-b {
+    background-color: #3f89c3;
+}
+
+#adv-done .mi-table tr .mi-th-c-g {
+    background-color: #69b778;
+}
+
+#adv-done .mi-level {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4%;
+    margin-top: 1%;
+    width: 100%;
+}
+
+#adv-done .mi-level-btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 35px;
+    color: #34b1c4;
+    border: 1px solid #34b1c4;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    margin: 0% 3%;
+}
+
+#adv-done .mi-level-btn:hover {
+    color: #fefefe;
+    background-color: #34b1c4;
+}
+
+#adv-done .mi-sign-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1%;
+    margin: auto;
+}
+
+#adv-done .mi-sign-box-item {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fefefe;
+}
+
+#adv-done .mi-pd-input {
+    /*max-width: 120px;*/
+    border-radius: 5px;
+    width: 85%;
+
+    padding: 3%;
+    margin-top: 4%;
+
+    background-color: #ffe7fa;
+    border: 1.5px solid #fefefe;
+
+    font-size: 0.5rem;
+}
+
+/*抽獎盒子*/
+
+#adv-done .mi-lottery {
+    position: relative;
+}
+
+#adv-done .mi-lot-box {
+    position: absolute;
+    bottom: -12%;
+    left: 7%;
+    cursor: pointer;
+}
+
+
+#adv-done .mi-lot-box-win {
+    width: 90%;
+    height: 36%;
+    position: absolute;
+    background-color: #ffdaf5;
+    background-color: #b60695;
+    bottom: 9%;
+    left: 5%;
+    padding-top: 2%;
+}
+
+/*抽獎盒子-結束*/
+
+#adv-done .mi-everyday {
+    margin: auto;
+    text-align: center;
+    color: #f5e351;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    background-color: #cb15a2;
+    padding: 1% 0%;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 5%;
+    margin-top: 3%;
+}
+
+#adv-done .focus-p {
+    font-weight: bold;
+}
+
+#adv-done .mi-main-last {
+    background-color: #28076f;
+}
+
+#adv-done .mi-pd-img {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+#adv-done .mi-pb-zero {
+    padding-bottom: 0;
+}
+
+#adv-done .mi-lot-top {
+    position: absolute;
+    cursor: pointer;
+
+    background-image: url(../images/lottery-bg.png);
+}
+
+#adv-done .mi-lot-but {
+    position: absolute;
+    cursor: pointer;
+}
+
+#adv-done .mi-lot-tit {
+    margin-bottom: 3%;
+    color: #fed00b;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+
+    -webkit-text-stroke: 1px #371f9a;
+}
+
+@media screen and (min-width: 1400px) {
+    #adv-done .mi-lot-tit {
+        font-size: 2rem;
+    }
+}
+
+#adv-done .mi-go-lot {
+    background-color: #fed00b;
+    width: 100%;
+    border-radius: 5px;
+    padding: 1% 0%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    border: 2px solid #fefefe;
+    font-weight: bold;
+    color: #2d2d2d;
+    cursor: pointer;
+}
+
+#adv-done .mi-go-lot:hover {
+    background-color: #fec50b;
+}
+
+#adv-done .mi-lot-one {
+    width: 100%;
+    font-size: 1.3rem;
+    color: #4412ab;
+    font-weight: bold;
+    background-color: #fed00b;
+    padding: 2% 0;
+}
+
+#adv-done .mi-into {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    width: 80%;
+    margin-bottom: 4%;
+    text-align: center;
+    line-height: 2rem;
+    border: 2px solid #fefefe;
+    border-radius: 10px;
+    padding: 3%;
+    width: 95%;
+}
+
+#adv-done .mi-into-sp {
+    color: #fed00b;
+}
+
+#adv-done .mi-live {
+    width: 60%;
+}
+
+#adv-done .mi-how {
+    color: #fefefe;
+    text-align: left;
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+#adv-done .mi-how-item {
+    background-color: #ffd23e;
+    padding: 2% 2%;
+    color: #28076f;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    border: 2px #fefefe solid;
+    font-size: 1.2rem;
+}
+
+#adv-done .mi-how-item .mi-how-tit {
+    font-size: 2rem;
+}
+
+#adv-done .mi-how-item span {
+    font-weight: bold;
+}
+
+#adv-done .mi-pb-0 {
+    padding-bottom: 0;
+}
+
+#adv-done .mi-consult {
+    width: 30%;
+    margin-bottom: 1%;
+}
+
+#adv-done .mi-mb-only {
+    display: none;
+}
+
+#adv-done .mi-pc-only {
+    display: display;
+}
+
+#adv-done .mi-see-more {
+    font-size: 1rem;
+    margin-left: 1%;
+    color: #fefefe;
+    position: absolute;
+    top: 6%
+}
+
+#adv-done .mi-win-one {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border: 2px solid #ffb6eb;
+    color: #a10184;
+        color: #ffffff;
+    margin-bottom: 1%;
+}
+
+@media screen and (min-width: 1400px) {
+    #adv-done .mi-win-one {
+            margin-top: 1%;
+    }
+}
+
+#adv-done .mi-win-two {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: auto;
+    width: 80%;
+
+    margin-bottom: 1%;
+
+    color: #f8cb0b;
+    font-weight: bold;
+}
+
+#adv-done .mi-win-three {
+    font-size: 0.7rem;
+    text-align: center;
+    color: #a90000;
+    color: #ffffff;
+}
+
+#adv-done .mi-win-no {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9b007f;
+        color: #fed00b;
+}
+
+#adv-done .mi-pc-ch {
+    display: block;
+}
+
+#adv-done .mi-mb-ch {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #adv-done .mi-lot-one {
+        font-size: 1rem;
+        padding: 1% 0;
+    }
+
+    #adv-done .mi-lot-box-win {
+        height: 43%;
+        bottom: 7%;
+    }
+
+    #adv-done .mi-lot-box {
+        /*height: 43%;*/
+        bottom: 7%;
+    }
+
+    #adv-done .mi-win-one {
+        width: 90%;
+        font-size: 0.7rem;
+        border: 1px solid #ffb6eb;
+    }
+
+    #adv-done .mi-win-two {
+        font-size: 1rem;
+    }
+
+    #adv-done .mi-win-three {
+        font-size: 0.5rem;
+    }
+
+    #adv-done .mi-win-no {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #9b007f;
+    }
+
+    #adv-done .mi-mb-ch {
+        display: block;
+    }
+
+    #adv-done .mi-pc-ch {
+        display: none;
+    }
+
+    #adv-done .mi-pc-only {
+        display: none;
+    }
+
+    #adv-done .mi-see-more {
+        margin-left: 3%;
+        top: 12%;
+    }
+
+    #adv-done .mi-call-con {
+        font-size: 1rem;
+    }
+
+    #adv-done .mi-how {
+        width: 90%;
+    }
+
+    #adv-done .mi-how-item {
+        font-size: 0.8rem;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    #adv-done .mi-mb-only {
+        display: block;
+    }
+
+    #adv-done .mi-into {
+        font-size: 0.8rem;
+        padding: 3%;
+        line-height: 1.3rem;
+    }
+
+    #adv-done .mi-sign-box {
+        margin-bottom: 6%;
+    }
+
+    #adv-done .mi-sign-box-item {
+        flex: 0 0 50%;
+    }
+
+    #adv-done .mi-everyday {
+        font-size: 0.7rem;
+        padding: 5%;
+    }
+
+    #adv-done .mi-level-btn {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    #adv-done .mi-case-box {
+        width: 100%;
+    }
+
+    #adv-done .mi-ps-titline {
+        margin-bottom: 8%;
+    }
+
+    #adv-done .mi-ps-titline-02 {
+        margin-bottom: 8%;
+        padding-top: 7%;
+    }
+
+    #adv-done .mi-mb-kv-top {
+        /*padding-top: 475px;*/
+    }
+
+    #adv-done .mi-mb-dn {
+        /*display: none;*/
+    }
+
+    #adv-done .mi-tit-r40 {
+        margin-left: 0%;
+    }
+
+    #adv-done .mi-fix-bg {
+        background-color: #fefefe;
+        /*background-image: url(css-img/fix-main-mb.png);*/
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    #adv-done .mi-video-if {
+        height: auto;
+    }
+
+    #adv-done .mi-case {
+        width: 100%;
+    }
+
+    #adv-done .mi-cloud-tit {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    #adv-done .mi-tit-blue-s {
+        font-size: 1rem;
+        margin-bottom: 7%;
+    }
+
+    #adv-done .mi-tit-blue {
+        font-size: 1.4rem;
+        margin-bottom: 5%;
+    }
+
+    #adv-done .mi-tit-blue-mb {
+        width: 100%;
+        text-align: left;
+    }
+
+    #adv-done .mi-tit-blue-two {
+        margin-top: 10%;
+    }
+
+    #adv-done .mi-pd-btn-right {
+        font-size: 0.7rem;
+    }
+
+    #adv-done .mi-time-tit {
+        margin-top: 0%;
+        width: 90%;
+    }
+
+    #adv-done .mi-pd-btn {
+        padding: 3px 40px;
+        margin-top: 5%;
+    }
+
+    #adv-done .mi-tit-mb {
+        width: 100%;
+    }
+
+    #adv-done .mi-kv-box-btn {
+        padding: 0% 5% 10% 5%;
+    }
+
+    #adv-done .mi-btn-mb {
+        width: 100%;
+    }
+
+    #adv-done .mi-kv-box-r {
+        margin-top: 0%;
+    }
+
+    #adv-done .mi-v-btn {
+        width: 90%;
+    }
+
+    #adv-done .mi-v-btn-l {
+        margin-right: 0px;
+        margin-bottom: 5%;
+    }
+
+    #adv-done .mi-mb-sicon {
+        width: 35%;
+        margin: auto;
+    }
+
+    #adv-done .mi-mb-mb10 {
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 2600px) {
+#adv-done .mi-lot-box-size{
+    width: 600px;
+    height: 240px;
+    overflow: hidden;
+        bottom: -5%;
+    left: 20%;
+}
+}
+
+@media screen and (max-width: 2200px) {
+#adv-done .mi-lot-box-size{
+    width: 600px;
+    height: 240px;
+    overflow: hidden;
+    bottom: -16%;
+    left: 10%;
+}
+}
+
+
+@media screen and (max-width: 1900px) {
+#adv-done .mi-lot-box-size{
+    width: 587px;
+    height: 240px;
+    overflow: hidden;
+    bottom: -22%;
+    left: 7%;
+}
+}
+
+@media screen and (max-width: 1700px) {
+#adv-done .mi-lot-box-size{
+    width: 551px;
+    height: 210px;
+    bottom: -17%;
+    left: 5.5%;
+    overflow: hidden;
+}
+}
+
+@media screen and (max-width: 1450px) {
+#adv-done .mi-lot-box-size{
+        width: 502px;
+    height: 203px;
+    bottom: -19%;
+    overflow: hidden;
+}
+}
+
+@media screen and (max-width: 1300px) {
+#adv-done .mi-lot-box-size{
+        width: 439px;
+    height: 163px;
+    bottom: -12%;
+    overflow: hidden;
+        left: 7%;
+}
+}
+
+
+@media screen and (max-width: 1200px) {
+#adv-done .mi-lot-box-size{
+        overflow: hidden;
+    width: 395px;
+    height: 151px;
+
+}
+}
+
+@media screen and (max-width: 1100px) {
+#adv-done .mi-lot-box-size{
+        overflow: hidden;
+        width: 345px;
+    height: 139px;
+
+}
+}
+
+@media screen and (max-width: 1000px) {
+#adv-done .mi-lot-box-size{ 
+
+    width: 322px;
+    height: 85px;
+    bottom: 6%;
+
+    overflow: hidden;
+
+}
+}
+
+@media screen and (max-width: 1000px) {
+#adv-done .mi-lot-box-size{ 
+
+    width: 292px;
+    height: 77px;
+    bottom: 6%;
+
+    overflow: hidden;
+
+}
+}
+
+@media screen and (max-width: 800px) {
+#adv-done .mi-lot-box-size{
+    width: 550px;
+    height: 270px;
+    bottom: -16%;
+
+    overflow: hidden;
+    bottom: -32%;
+}
+}
+
+@media screen and (max-width: 600px) {
+#adv-done .mi-lot-box-size{
+        width: 391px;
+    height: 206px;
+    bottom: -25%;
+    overflow: hidden;
+}
+}
+
+@media screen and (max-width: 500px) {
+#adv-done .mi-lot-box-size{
+    width: 404px;
+    height: 197px;
+    bottom: -16%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 450px) {
+#adv-done .mi-lot-box-size{
+    width: 300px;
+    height: 141px;
+    bottom: -14%;
+    overflow: hidden;
+    left: 7%;
+}
+
+@media screen and (max-width: 400px) {
+#adv-done .mi-lot-box-size{
+      width: 274px;
+    height: 113px;
+    bottom: -2%;
+    overflow: hidden;
+    left: 6.5%;
+}
+
+@media screen and (max-width: 365px) {
+#adv-done .mi-lot-box-size{
+      width: 260px;
+    height: 113px;
+    bottom: -2%;
+    overflow: hidden;
+    left: 7%;
+}
+
+@media screen and (max-width: 350px) {
+#adv-done .mi-lot-box-size{
+       width: 236px;
+    height: 110px;
+    bottom: -14%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 300px) {
+#adv-done .mi-lot-box-size{
+     width: 203px;
+    height: 96px;
+    bottom: -14%;
+    overflow: hidden;
+}
+
+}

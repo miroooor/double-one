@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel=“canonical” href=“https://iotmart.advantech.com.tw”>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="研華-研華雙十一狂歡慶" />
+    <meta name="description" content="研華雙十一狂歡慶" />
+    <meta name="keywords" content="研華,廠務系統管理,智能化方案" />
+    <!--全版設定-->
+    <meta name="FULLSIZE" content="TRUE" />
+    <title>研華-研華雙十一狂歡慶</title>
+    <!-- fontawesome -->
+    <link href="https://advcloudfiles.advantech.com/web/fonts/font-awesome/lastest/css/all.min.css" rel="stylesheet" />
+    <!-- iot Mart Style -->
+    <!-- Yoursite Style -->
+    <link href="css/custom-1027.css" rel="stylesheet" type="text/css" />
+    <link href="css/draw.css" rel="stylesheet" type="text/css" />
+    <!-- Yoursite Scripts -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/custom-0918.js"></script>
+    <script type="text/javascript" src="js/draw.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
+</head>
+
+<body>
+    <div id="adv-done" class="mi-all">
+        <!-- mi-KV -->
+        <section id="" class="mi-kv">
+            <div class="mi-kv-box">
+                <div class="mi-kv-box-l wow bounceInLeft">
+                    <h1>
+                        <img class="mi-img-100 mi-tit-mb" src="images/one-main-kv-tit.png" alt="研華雙十一狂歡慶" />
+                    </h1>
+                    <!--<div class="mi-main-bbox">
+                    	<a class="mi-main-btn" href="#" target="_blank">查看產品<span></span>
+						</a>
+					</div>-->
+                </div>
+                <div class="mi-kv-box-r wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="mi-box-1">
+                        <div class="mi-lot-tit">
+                            填寫資料即可參加<br class="mi-mb-only" />幸運刮刮樂！
+                        </div>
+                    </div>
+
+                    <div class="mi-sign-box">
+                        <div class="mi-sign-box-item">
+                            <p id="in-name" class="focus-p pt-35 pt-md-4">
+                                輸入姓名<input placeholder="請輸入姓名" class="mi-pd-input mt-3" type="text" name=""
+                                    id="name-input1" />
+                            </p>
+                        </div>
+                        <div class="mi-sign-box-item">
+                            <p class="focus-p pt-35 pt-md-4">
+                                輸入電話<input placeholder="請輸入電話" class="mi-pd-input mt-3" type="text" name=""
+                                    id="name-input2" oninput="value=value.replace(/[^\d]/g,'')" maxlength="10" />
+                            </p>
+                        </div>
+                        <div class="mi-sign-box-item">
+                            <p class="focus-p pt-35 pt-md-4">
+                                輸入信箱<input placeholder="請輸入信箱" class="mi-pd-input mt-3" type="text" name=""
+                                    id="name-input3" />
+                            </p>
+                        </div>
+                        <div class="mi-sign-box-item">
+                            <p class="focus-p pt-35 pt-md-4">
+                                輸入公司<input placeholder="請輸入公司" class="mi-pd-input mt-3" type="text" name=""
+                                    id="name-input4" />
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mi-box-1">
+                        <div id="complete" class="mi-go-lot">完成填寫，開始刮刮樂！</div>
+                    </div>
+
+                    <!--未填資料-提示區塊-->
+                    <div id="div-ng" style="display: none" class="mi-box-1">
+                        <div class="mi-lot-one">請先填寫遊戲上方的欄位，即可參加刮刮樂</div>
+                    </div>
+
+                    <!--完成填寫資料-提示區塊-->
+                    <div id="div-ok" style="display: none" class="mi-box-1">
+                        <div class="mi-lot-one">現在可以開始刮刮樂</div>
+                    </div>
+
+                    <!--已刮過再點-->
+                    <div id="div-double" style="display: none" class="mi-box-1">
+                        <div class="mi-lot-one">每日限刮一次，明日即可再次參加！</div>
+                    </div>
+
+                    <div class="mi-lottery">
+                        <img class="mi-img-100 mi-pc-ch" src="images/lottery-bg.png" alt="研華雙十一狂歡慶" />
+
+                        <img class="mi-img-100 mi-mb-ch" src="images/lottery-bg-mb.png" alt="研華雙十一狂歡慶" />
+
+                        <div id="bottom" class="mi-lot-box-win">
+                            <!--中獎項目顯示-->
+                            <!-- B -->
+                            <div id="bDiv" style="display: none;">
+                                <!--行銷提示字-->
+                                <div class="mi-win-one">1 Line points 放大五倍</div>
+                                <!--獎品及序號-->
+                                <div id="bAwards" class="mi-win-two">5 Line points </div>
+                                <!--共用提示-->
+                                <div class="mi-win-three">
+                                    恭喜您中獎，請您截圖或拍照記錄序號，並在購物車結帳時填入序號，即可兌獎
+                                </div>
+                            </div>
+                            <!-- C -->
+                            <div id="cDiv" style="display: none;">
+                                <!--行銷提示字-->
+                                <div class="mi-win-one">10 Line points 放大五倍</div>
+                                <!--獎品及序號-->
+                                <div id="cAwards" class="mi-win-two">50 Line points </div>
+                                <!--共用提示-->
+                                <div class="mi-win-three">
+                                    恭喜您中獎，請您截圖或拍照記錄序號，並在購物車結帳時填入序號，即可兌獎
+                                </div>
+                            </div>
+                            <!-- D -->
+                            <div id="dDiv" style="display: none;">
+                                <!--行銷提示字-->
+                                <div class="mi-win-one">20 Line points 放大五倍</div>
+                                <!--獎品及序號-->
+                                <div id="dAwards" class="mi-win-two">100 Line points </div>
+                                <!--共用提示-->
+                                <div class="mi-win-three">
+                                    恭喜您中獎，請您截圖或拍照記錄序號，並在購物車結帳時填入序號，即可兌獎
+                                </div>
+                            </div>
+                            <!--中獎項目顯示-都沒中-->
+                            <!-- A -->
+                            <div id="aDiv" style="display: none">
+                                <div class="mi-win-one">每天都可以玩一次</div>
+                                <div class="mi-win-two mi-win-no">銘謝惠顧</div>
+                                <div class="mi-win-three">沒關係，再接再厲，明天再挑戰</div>
+                            </div>
+                            <!--中獎項目顯示-iphone-->
+                            <!-- SS -->
+                            <div id="sDiv" style="display: none">
+                                <div class="mi-win-one">恭喜您獲得大獎！</div>
+                                <div id="sAwards" class="mi-win-two">iphone 13 </div>
+                                <div class="mi-win-three">
+                                    恭喜您中獎，請您截圖或拍照記錄序號，並在購物車結帳時填入序號，即可兌獎
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mi-lot-box mi-lot-box-size">
+                            <canvas id="top" width="600" height="180"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="mi-everyday">
+                        <div>
+                            <div>※ 刮出獎項即顯示兌獎序號，請截圖或牢記序號</div>
+                            <div>※ 每日輸入資訊可玩一次，下單時備註欄填入兌獎序號即可兌換</div>
+                            <div>※ 經核對資料無誤，將於12 / 13當週透過email寄送</div>
+                            <div>※ 退貨或取消訂單者也同時喪失對獎資格</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- mi-select -->
+        <nav class="mi-sel">
+            <div id="js-pc_menu" class="mi-sel-box">
+                <a class="m-sel-btn" href="#done-01"> 工業電腦 </a>
+                <a class="m-sel-btn m-sel-btn-line" href="#done-02"> 物聯網系列 </a>
+                <a class="m-sel-btn m-sel-btn-line" href="#done-03"> 工業周邊 </a>
+                <a class="m-sel-btn m-sel-btn-line" href="#done-04"> 主機板 </a>
+                <a class="m-sel-btn" href="#done-05"> 下單攻略 </a>
+            </div>
+        </nav>
+
+        <section id="" class="mi-box mi-box-lg mi-box-bg-Circuit mi-bg-dcr mi-bk-two" style="">
+            <div class="mi-box-wall mi-bk-two">
+                <div class="mi-box-wall-flex">
+                    <div class="mi-box-1">
+                        <div class="mi-into">
+                            為了迎接研華雙十一嵌入式物聯網活動，我們在10月中展開暖身慶，特別精選出熱銷產品，包含嵌入式系統及板卡、物聯網系列的工規電腦、工業周邊等等，直播當天還有超殺產品組合，手刀報名優先卡位！11月起還可參與刮刮卡賺LINE
+                            Points，<br class="mi-mb-only" /><span class="mi-into-sp">最大獎再送iPhone 13！</span>
+                        </div>
+                    </div>
+
+                    <div class="mi-box-2 mi-box-live-l">
+                        <div class="mi-video mi-mb-mb10">
+                            <!--<iframe class="mi-video-if" width="100%" height="315" src="https://www.youtube.com/embed/TCG_WUC9t_k?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                            <img class="mi-img-100" src="images/mi-live.jpg" alt="研華雙十一狂歡慶" />
+                        </div>
+                    </div>
+
+                    <div class="mi-box-2 mi-box-live-r">
+                        <p class="mi-live">
+                            <img class="mi-img-100" src="images/live-icon.png" alt="研華雙十一狂歡慶" />
+                        </p>
+                        <p class="mi-tit-blue mi-bk-wf mi-tit-blue-mb">直播時間：11 / 10 (三)</p>
+                        <p class="mi-v-tit mi-v-tit-bm mi-v-tit-time">下午 2:00 - 2:40</p>
+                        <p class="mi-v-tit mi-v-tit-bm">
+                            當天將提供最優惠的產品組合，上線人數有限，<br class="mi-pc-only" />先搶先贏，報名再抽line points 50點
+                        </p>
+                        <!--<p class="mi-v-con">且與其他LPWAN技術相比，可透過安全加密方式建立專用的網域，就如同一個小型的私人網域，可以自行架設基站，使用的自由度更高！</p>-->
+                        <a class="mi-v-btn" href="https://www.surveycake.com/s/dmVZq"
+                            target="_blank">立即報名<span></span></a>
+                    </div>
+                    <!--<div class="mi-box-1">
+                        <a class="mi-v-btn mi-v-btn-l" href="#" target="_blank">打開LoRa新契機<span></span></a>
+                        <a class="mi-v-btn" href="#" target="_blank">課程介紹&報名<span></span></a>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <section id="done-01" class="mi-box mi-box-lg mi-box-bg-Circuit mi-bg-dcr mi-main-gray" style="">
+            <div class="mi-box-wall mi-main-gray mi-pb-zero">
+                <div class="mi-box-wall-flex">
+                    <!--第一組產品-->
+                    <div class="mi-box-1">
+                        <p class="mi-tit-blue mi-bk-bf mi-ps-titline">
+                            工業電腦<a target="_blank" class="mi-see-more"
+                                href="https://iotmart.advantech.com.tw/Computing-Platform/System-Fanless-Computer/AITW_22354.products.htm">看更多
+                                ▶</a>
+                        </p>
+                    </div>
+                    <!--<div class="mi-level">
+                        <a class="mi-level-btn" href="#level-01">初階</a>
+                        <a class="mi-level-btn" href="#level-02">中階</a>
+                        <a class="mi-level-btn" href="#level-03">高階</a>
+                    </div>-->
+                    <!--<div id="level-01" class="mi-box-1 mi-mb-2">
+                        <p class="mi-tit-blue-s mi-bk-bf">初階版 –智能感知裝置</p>
+                    </div>-->
+                    <!--商品列表-->
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">嵌入式<br />無風扇電腦</p>
+                            <p class="mi-pd-tit-s">ARK-11-S1A3</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-01.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-one-h">
+                                <li>● Intel® Celeron® 處理器N3350雙核心</li>
+                                <li>● DIN-Rail系統, 將主要I/O接口集中在正面方便使用</li>
+                                <li>● 內嵌工規寬溫4G DDR3記憶體</li>
+                                <li>● 工作溫度：-30 ~ 70 °C</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="ARK-11-S1A3">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Communications/Networking-Communications-Non-Managed-Ethernet-Switch/model-ARK-11-S1A3.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">掌上型<br />低功耗無風扇電腦</p>
+                            <p class="mi-pd-tit-s">EIS-D210W-S</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-02.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-one-h">
+                                <li>● Intel® Atom™ N3350 雙核 1.33 GHz SoC</li>
+                                <li>● DDR3記憶體4G</li>
+                                <li>● 固態硬碟128G</li>
+                                <li>● Windows 10 IoT</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="EIS-D210W-S">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/Remote-IO-Module-RS-485-I-O-Module/model-EIS-D210W-S.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">掌上型<br />無風扇嵌入式系統</p>
+                            <p class="mi-pd-tit-s">EPC-U2117E3W-03Y2W</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-03.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-one-h">
+                                <li>● Intel® Atom® E3930處理器 雙核心</li>
+                                <li>● 內建 1 x M.2 擴充插槽 (i.e.: Wi-Fi 模組)</li>
+                                <li>● 1 x Full size Mini PCIe 擴充插槽</li>
+                                <li>● 板載內嵌式記憶體</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="EPC-U2117E3W-03Y2W">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/Remote-IO-Module-Ethernet-I-O-Module/model-EPC-U2117E3W-03Y2W.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <!--商品列表-->
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">工業級15.6"<br />電容式觸控電腦</p>
+                            <p class="mi-pd-tit-s">UTC-115GP-IOT0E</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-04.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-one-h">
+                                <li>● Intel N3450四核心1.10GHz</li>
+                                <li>● Windows 10作業系統</li>
+                                <li>● 低功耗無風扇系統設計</li>
+                                <li>● 前面板具有IP65防護等級的防水、防塵功能</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="UTC-115GP-IOT0E">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/Remote-IO-Module-LPWAN-I-O-Module/model-UTC-115GP-IOT0E.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <!--第一組產品-結束-->
+                    <!--第二組產品-->
+                    <div id="done-02" class="mi-box-1">
+                        <p class="mi-tit-blue mi-bk-bf mi-ps-titline mi-tit-blue-two">
+                            物聯網系列<a target="_blank" class="mi-see-more"
+                                href="https://iotmart.advantech.com.tw/Solution-Ready-Platform-SRP/Edge-Solution-Ready-Package/AITW_22369.products.htm">看更多
+                                ▶</a>
+                        </p>
+                    </div>
+                    <!--商品列表-->
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit mi-pd-tit-sm">
+                                樹莓派4<br />(Raspberry Pi 4)<br />物聯網閘道器套件
+                            </p>
+                            <p class="mi-pd-tit-s">Ei-U220</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-05.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-two-h">
+                                <li>● 工業等級功能擴充套件</li>
+                                <li>● 全金屬散熱機殼|Raspbian 驅動軟體</li>
+                                <li>● 工業級輸入/輸出板，搭配RS-232/485和通用型之輸入/輸出(GPIO)</li>
+                                <li>● 備用電池可維持實時時鐘(RTC) 於斷電時持續作用</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="Ei-U220">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/IoT-Gateway-Remote-Terminal-Unit/model-Ei-U220.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">2.9"<br />電子紙顯示器</p>
+                            <p class="mi-pd-tit-s">EPD-210-001</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-06.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-two-h">
+                                <li>● 陽光下可直視，180度可視角</li>
+                                <li>● 透過NFC供電設計，無須電池</li>
+                                <li>
+                                    ● 支援Android手機，搭配Google Play下載應用程式「Advantech EPD NFC
+                                    Writer」
+                                </li>
+                                <li>● 黑/白基本圖示顯示</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="EPD-210-001">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/IoT-Gateway-Remote-Terminal-Unit/model-EPD-210-001.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">無線<br />傳輸模組</p>
+                            <p class="mi-pd-tit-s">AIW-344FQ-E01</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-07.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-two-h">
+                                <li>● LTE CAT4 mini PCI-e 模組 （歐規）</li>
+                                <li>● LTE 天線同軸連接器</li>
+                                <li>● GPS 天線連接器</li>
+                                <li>● 高通芯片MDM9X07</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="AIW-344FQ-E01">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/IoT-Gateway-LPWAN-Gateway/model-AIW-344FQ-E01.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--商品列表-->
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">WISE-3220 2.4G WiFi<br />工業用路由器</p>
+                            <p class="mi-pd-tit-s">WISE-3220IOS-21A1T</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-08.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-two-h">
+                                <li>● USB 2.0 主機接口</li>
+                                <li>● Linux OS/ OpenWRT作業系統</li>
+                                <li>● 可配置為 1x1 或 2x2 解決方案</li>
+                                <li>● 超低功耗的動態時鐘切換模式</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="WISE-3220IOS-21A1T">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Communications/Wireless-Communications-Cellular-Routers-Gateway/model-WISE-3220IOS-21A1T.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <!--第二組產品-結束-->
+
+                    <!--第三組產品-->
+                    <div id="done-03" class="mi-box-1">
+                        <p class="mi-tit-blue mi-bk-bf mi-ps-titline mi-tit-blue-two">
+                            工業周邊<a target="_blank" class="mi-see-more"
+                                href="https://iotmart.advantech.com.tw/Peripherals/Industrial-Memory-DIMM/AITW_22403.products.htm">看更多
+                                ▶</a>
+                        </p>
+                    </div>
+                    <!--<div class="mi-level">
+                        <a class="mi-level-btn" href="#level-01">初階</a>
+                        <a class="mi-level-btn" href="#level-02">中階</a>
+                        <a class="mi-level-btn" href="#level-03">高階</a>
+                    </div>-->
+                    <!--<div id="level-01" class="mi-box-1 mi-mb-2">
+                        <p class="mi-tit-blue-s mi-bk-bf">初階版 –智能感知裝置</p>
+                    </div>-->
+                    <!--商品列表-->
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">記憶體模組260pin <br />SODIMM DDR4 (4G)</p>
+                            <p class="mi-pd-tit-s">SQR-SD4N4G2K6SNPCB</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-09.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-three-h">
+                                <li>● 採用第一等級原廠晶片</li>
+                                <li>● 工作溫度範圍:0 ~ 85 °C</li>
+                                <li>● 3年穩定供貨 &終身保固</li>
+                                <li>● 經過工控嚴格檢驗測試</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="SQR-SD4N4G2K6SNPCB">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Peripherals/Industrial-Memory-SODIMM-DDR4/model-SQR-SD4N4G2K6SNPCB.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">研華工業級固態硬碟<br />(512G)</p>
+                            <p class="mi-pd-tit-s">SQF-S25V4-512GCSBC</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-12.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-three-h">
+                                <li>● GUI管理工具和軟體API組</li>
+                                <li>● 抗衝擊、抗振動、低功耗</li>
+                                <li>● 支援 Fragment 寫入技術和 Flush Manager</li>
+                                <li>● 支援低密度奇偶校驗錯誤檢查碼</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="SQF-S25V4-512GCSBC">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/Remote-IO-Module-LPWAN-I-O-Module/model-SQF-S25V4-512GCSBC.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">Intel® Core™ i5<br />處理器</p>
+                            <p class="mi-pd-tit-s">96MPI5S-3.2-6M11T</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-11.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-three-h">
+                                <li>● Intel 6th Generation Core i5-6500</li>
+                                <li>● Up to 3.6 GHz</li>
+                                <li>● 6 MB Cache</li>
+                                <li>● LGA1151</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="96MPI5S-3.2-6M11T">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/Remote-IO-Module-Ethernet-I-O-Module/model-96MPI5S-3.2-6M11T.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <!--商品列表-->
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">記憶體模組240pin<br />UDIMM DDR3 (8G)</p>
+                            <p class="mi-pd-tit-s">SQR-UD3N-8G1K6SNEB</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-12-02.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-three-h">
+                                <li>● 採用第一等級原廠晶片</li>
+                                <li>● 工作溫度範圍:-40 ~ 85 °C</li>
+                                <li>● 3年穩定供貨 &終身保固</li>
+                                <li>● 經過工控嚴格檢驗測試</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="SQR-UD3N-8G1K6SNEB">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/Remote-IO-Module-LPWAN-I-O-Module/model-SQR-UD3N-8G1K6SNEB.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <!--第三組產品-結束-->
+                    <!--第四組產品-->
+                    <div id="done-04" class="mi-box-1">
+                        <p class="mi-tit-blue mi-bk-bf mi-ps-titline mi-tit-blue-two">
+                            主機板<a target="_blank" class="mi-see-more"
+                                href="https://iotmart.advantech.com.tw/Computing-Platform/Motherboard-Industrial-Motherboards-Mini-ITX-Motherboard/AITW_22311.products.htm">看更多
+                                ▶</a>
+                        </p>
+                    </div>
+                    <!--商品列表-->
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">RISC精簡指令集<br />單板電腦 2.5"</p>
+                            <p class="mi-pd-tit-s">RSB-3720CQ-ACA1E</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-13.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-four-h">
+                                <li>● NXP Arm® Cortex®-A53 i.MX8M Plus Quad/Dual 高達 1.8 GHz</li>
+                                <li>● 搭載LPDDR4 4GB/ 6GB記憶體</li>
+                                <li>● 1個 3G/4G mini-PCIe</li>
+                                <li>● 工作溫度範圍： -40 ~ 85° C<br />(-40 ~ 185° F)</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="RSB-3720CQ-ACA1E">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/IoT-Gateway-Remote-Terminal-Unit/model-RSB-3720CQ-ACA1E.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">Mini-ITX<br />工業主機板</p>
+                            <p class="mi-pd-tit-s">AIMB-205G2-00A1E</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-15.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-four-h">
+                                <li>
+                                    ● 支援 Intel H110 晶元組的Intel® 第六代 和第七代 Gen Core™ i
+                                    處理器
+                                </li>
+                                <li>● 兩個 260-pin SO-DIMM</li>
+                                <li>● 支援 PCIe x 16 (Gen 3)</li>
+                                <li>● 支援 DP/DVI/VGA/LVDS的雙重顯示(可選)</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="AIMB-205G2-00A1E">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Data-Acquisition-Control/IoT-Gateway-LPWAN-Gateway/model-AIMB-205G2-00A1E.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--商品列表-->
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">Mini-ITX<br />工業主機板</p>
+                            <p class="mi-pd-tit-s">AIMB-215D-S6B1E</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-16.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-four-h">
+                                <li>
+                                    ● 支援 Intel Celeron 四核<br />
+                                    J1900 處理器
+                                </li>
+                                <li>● 兩個 204-pin SO-DIMM</li>
+                                <li>● 支援1 PCle x 1 and 2 mini-PCle 擴充槽</li>
+                                <li>● 支援CRT/LVDS/DP++</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="AIMB-215D-S6B1E">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Communications/Wireless-Communications-Cellular-Routers-Gateway/model-AIMB-215D-S6B1E.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--商品列表-->
+                    <div class="mi-box-3">
+                        <div class="mi-pd-box">
+                            <p class="mi-pd-tit">Micro ATX<br />工業主機板</p>
+                            <p class="mi-pd-tit-s">AIMB-584QG2-00A1E</p>
+                            <div class="mi-pd-img">
+                                <img class="mi-img-100" src="images/done-pd-17.png" alt="研華雙十一狂歡慶" />
+                            </div>
+                            <ul class="mi-pd-item mi-pd-item-four-h">
+                                <li>● 支援 Intel ® Xeon ® / Core™ i7/i5/i3 處理器</li>
+                                <li>● 4個 240-pin DIMM</li>
+                                <li>● 支援6 x SATAIII, 2 SATAII 及 雙乙太網路</li>
+                                <li>● 支援 CRT, DVI, LVDS, DP, eDP 顯示(可選)</li>
+                            </ul>
+                            <estorewidget type="ProductWidget" value="AIMB-584QG2-00A1E">
+                                <p class="mi-pd-price product-price">$Widget.Price</p>
+                            </estorewidget>
+                            <p class="mi-pd-buy">
+                                <a class="mi-pd-btn"
+                                    href="https://iotmart.advantech.com.tw/Communications/Wireless-Communications-Cellular-Routers-Gateway/model-AIMB-584QG2-00A1E.htm"
+                                    target="_blank">立即購買<span></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <!--第四組產品-結束-->
+                </div>
+            </div>
+        </section>
+
+        <section id="" class="mi-box mi-box-lg mi-box-bg-Circuit mi-bg-dcr mi-main-green" style="">
+            <div class="mi-box-wall mi-main-green mi-pb-0">
+                <div class="mi-box-wall-flex">
+                    <div class="mi-box-1">
+                        <div class="mi-consult">
+                            <img class="mi-img-100" src="images/one-consult.png" alt="研華雙十一狂歡慶" />
+                        </div>
+                    </div>
+                    <div class="mi-box-1" data-wow-duration="2s" data-wow-delay="0.1s">
+                        <p class="mi-tit-blue mi-bk-wf">專人產品諮詢</p>
+                    </div>
+                    <div class="mi-box-1">
+                        <p class="mi-call-con">
+                            <a class="mi-bk-wf" href="tel:+886-2-7747-7599" target="_blank">活動洽詢：<br
+                                    class="mi-mb-only" />(02)7747-7599 <br class="mi-mb-only" />蔡小姐</a>
+                        </p>
+                    </div>
+                    <div class="mi-box-1">
+                        <p class="mi-call-con mi-call-con-b">
+                            <a class="mi-bk-wf" href="mailto:Winnie.Tsai@advantech.com.tw" target="_blank">電子郵件：<br
+                                    class="mi-mb-only" />Winnie.Tsai@advantech.com.tw</a>
+                        </p>
+                    </div>
+                    <!--<div class="mi-box-1">
+                        <a class="mi-big-btn" href="#" target="_blank">或是留下您的聯絡方式，專人主動與您聯繫<span></span>
+                        </a>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <section id="done-05" class="mi-box mi-box-lg mi-box-bg-Circuit mi-bg-dcr mi-main-green" style="">
+            <div class="mi-box-wall mi-main-green">
+                <div class="mi-box-wall-flex">
+                    <div class="mi-box-1">
+                        <p class="mi-tit-blue mi-bk-wf">下單攻略</p>
+                    </div>
+                    <div class="mi-box-1">
+                        <div class="mi-how">
+                            <div class="mi-how-item">
+                                <span class="mi-how-tit">1.</span> 即日起 ~
+                                11/1，可以先將欲下單的產品加入購物車
+                            </div>
+                            <div class="mi-how-item">
+                                <span class="mi-how-tit">2.</span> 即日起 ~
+                                11/7，開放報名直播，直播當天會有非常多的優惠組合，報名且參與線上直播者，可以<span>再抽LINE Points 50點 (限50名)</span>
+                            </div>
+                            <div class="mi-how-item">
+                                <span class="mi-how-tit">3.</span> 11/1 - 11/30
+                                天天可玩刮刮卡，獎項從LINE Points
+                                5點、10點、100點都有，買越多賺越多，<span>抽中刮刮卡請將序號記下，在下單時的留言處寫上對獎序號，</span>您會在12/15收到兌換連結，請注意您的email喔！<span>(若取消訂單、退貨則須將獎項收回)</span>
+                            </div>
+                            <div class="mi-how-item">
+                                <span class="mi-how-tit">4.</span> 刮刮卡中獎者，凡購買以下產品，且下單後無取消、退換貨，可以兌換刮刮卡中獎獎項，產品包含：ARK系列、EIS系列、EPC系列、UTC系列、Ei系列、EPD系列、AIW系列、WISE-3220系列、SQF系列、SQR系列、RSB系列、AIMB-2系列、AIMB-5系列
+                            </div>
+                            <div class="mi-how-item">
+                                ※ 主辦單位保有最終修改、變更、活動解釋及取消本活動之權利，若有相關異動將會公告於網站， 恕不另行通知
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mi-box-bg-Circuit-bg mi-bg-dcr mi-bk-two mi-main-last" style="">
+            <div class="mi-box-bg-Circuit-dcr">
+                <img class="mi-img-100 mi-dp-b" src="images/party-ny-down-bg.png" alt="研華雙十一狂歡慶" />
+            </div>
+        </section>
+    </div>
+
+    <!--wow-->
+    <script type="text/javascript" src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', // 欲套用wow.js的class                      (預設wow)
+            animateClass: 'animated', // 欲修改設定animat.css 的類別名稱            (預設animated)
+            offset: 0, // 當用戶滾動並到達這個距離時才開始執行動畫      (預設是0)
+            mobile: true, // 是否在行動裝置上執行動畫                   (預設是true)
+            live: true // 非同步產生的內容是否要套用                 (預設是true)
+        });
+        wow.init();
+    </script>
+</body>
+
+</html>

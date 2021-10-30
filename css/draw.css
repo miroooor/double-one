@@ -1,0 +1,3 @@
+.alert-error::-webkit-input-placeholder {
+    color: red;
+}
