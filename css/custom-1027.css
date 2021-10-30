@@ -3504,12 +3504,25 @@ th{
 
 @media screen and (max-width: 800px) {
 #adv-done .mi-lot-box-size{
-    width: 550px;
+        width: 483px;
     height: 270px;
     bottom: -16%;
 
     overflow: hidden;
-    bottom: -32%;
+        bottom: -26%;
+    left: 6%;
+}
+}
+
+@media screen and (max-width: 800px) {
+#adv-done .mi-lot-box-size{
+        width: 483px;
+    height: 270px;
+    bottom: -16%;
+
+    overflow: hidden;
+        bottom: -33%;
+    left: 6%;
 }
 }
 
@@ -3536,16 +3549,16 @@ th{
     height: 141px;
     bottom: -14%;
     overflow: hidden;
-    left: 7%;
+    left: 5.5%;
 }
 
 @media screen and (max-width: 400px) {
 #adv-done .mi-lot-box-size{
       width: 274px;
-    height: 113px;
-    bottom: -2%;
+    height: 85px;
+    bottom: 6%;
     overflow: hidden;
-    left: 6.5%;
+    left: 5.5%;
 }
 
 @media screen and (max-width: 365px) {
