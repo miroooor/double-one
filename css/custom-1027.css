@@ -3394,7 +3394,7 @@ th{
     height: 240px;
     overflow: hidden;
     bottom: -16%;
-    left: 10%;
+    left: 11%;
 }
 }
 
@@ -3405,7 +3405,7 @@ th{
     height: 240px;
     overflow: hidden;
     bottom: -22%;
-    left: 7%;
+    left: 10%;
 }
 }
 
@@ -3413,8 +3413,18 @@ th{
 #adv-done .mi-lot-box-size{
     width: 551px;
     height: 210px;
-    bottom: -17%;
-    left: 5.5%;
+    bottom: -15%;
+    left: 9%;
+    overflow: hidden;
+}
+}
+
+@media screen and (max-width: 1600px) {
+#adv-done .mi-lot-box-size{
+    width: 551px;
+    height: 210px;
+    bottom: -15%;
+    left: 7.5%;
     overflow: hidden;
 }
 }
@@ -3424,6 +3434,17 @@ th{
         width: 502px;
     height: 203px;
     bottom: -19%;
+    left: 6.5%;
+    overflow: hidden;
+}
+}
+
+@media screen and (max-width: 1400px) {
+#adv-done .mi-lot-box-size{
+        width: 502px;
+    height: 203px;
+    bottom: -19%;
+    left: 4.5%;
     overflow: hidden;
 }
 }
@@ -3453,7 +3474,7 @@ th{
         overflow: hidden;
         width: 345px;
     height: 139px;
-
+    left: 8%;
 }
 }
 
